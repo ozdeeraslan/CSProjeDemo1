@@ -23,5 +23,15 @@ namespace CSProjeDemo1.AbstractClasses
             YayinYili = yayinYili;
             KitapDurumu = Durum.OduncAlabilir;
         }
+
+        public void DurumGuncelle(Durum yeniDurum)
+        {
+            KitapDurumu = yeniDurum;
+        }
+
+        public override string ToString()
+        {
+            return $"{Baslik} - {Yazar} ({YayinYili}) [{KitapDurumu}]";
+        }
     }
 }

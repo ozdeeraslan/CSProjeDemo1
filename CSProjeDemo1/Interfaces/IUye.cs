@@ -15,5 +15,7 @@ namespace CSProjeDemo1.Interfaces
         List<Kitap> OduncAlinanKitaplar { get; }
         void KitapOduncAl(Kitap kitap);
         void KitapIadeEt(Kitap kitap);
+        void OduncAlinanKitaplariListele();
+        void BilgileriGuncelle(string yeniAd, string yeniSoyad);
     }
 }
